@@ -586,8 +586,7 @@ public class MenuController implements Initializable {
 		this.mainContent.getChildren().remove(1, this.mainContent.getChildren().size());
 		this.topBox.getChildren().clear();
 		this.title.setText("Calendar");
-		CalendarController myCalendar = new CalendarController();
-		this.mainContent.getChildren().add(myCalendar.getLayout());
+		this.mainContent.getChildren().add(CalendarController.tempCalendarFunction());
 	}
 
 	/**
